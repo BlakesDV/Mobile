@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Txt_System : MonoBehaviour
 {
     public Image C1;
     public Image C2;
-    public Text N1;
-    public Text N2;
-    public Text dialogue;
+    public TextMeshProUGUI N1;
+    public TextMeshProUGUI N2;
+    public TextMeshProUGUI dialogue;
     public GameObject window;
 
     [Range(0, 10)]
@@ -18,16 +19,14 @@ public class Txt_System : MonoBehaviour
     public int dialoguePos;
     public Dialogue[] dialogues;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
+        startDialogue();
     }
 
     public void loadDialogue(Dialogue[] _ds)
