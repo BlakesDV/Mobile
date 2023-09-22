@@ -26,6 +26,7 @@ public class Txt_System : MonoBehaviour
 
     private void Update()
     {
+        loadDialogue(dialogues);
         startDialogue();
     }
 
